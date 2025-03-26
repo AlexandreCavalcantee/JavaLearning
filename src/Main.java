@@ -17,7 +17,7 @@ public class Calculator {
                 result = num1 + num2;
                 break;
             default:
-                System.out.println("Operação válida.");
+                System.out.println("Operaçaão válida.");
                 return;
         }
 
