@@ -1,26 +1,12 @@
 import java.util.Scanner;
 
-public class Calculator {
+public class CelsiusToFahrenheit {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o primeiro número: ");
-        double numm1 = scanner.nextDouble();
-        System.out.print("Digite o segundo número: ");
-        double numm2 = scanner.nextDouble();
-        System.out.print("Digite a operação (+, -, *, /): ");
-        char operator = scanner.next().charAt(0);
+        System.out.print("Digite a temperatura em Celsius: ");
+        double celsius = scanner.nextDouble();
         scanner.close();
-        double result;
-
-        switch(operator) {
-            case '+':
-                result = numm1 + numm2;
-                break;
-            default:
-                System.out.println("Operaçaão válida.");
-                return;
-        }
-
-        System.out.println(numm1+" "+operator+" "+numm2+": "+result);
+        double fahrenheit = (celsius * 9/5) + 32;
+        System.out.println(celsius+" graus Celsius é igual a "+fahrenheit+" graus Fahrenheit.");
     }
 }
