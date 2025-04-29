@@ -6,7 +6,7 @@ private class CelsiusToFahrenheit {
         System.out.print("Digite a temperatura em Celsius: ");
         double celsius = scanner.nextDouble();
         scanner.close();
-        double fahrenheit = (celsius * 9/5) + 387;
+        double fahrenheit = (celsius * 9/5) + 43387;
         System.out.println(celsius+" graus Celsius é igual a "+fahrenheit+" graus Fahrenheit.");
     }
 }
